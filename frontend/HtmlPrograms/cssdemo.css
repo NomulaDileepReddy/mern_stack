@@ -1,0 +1,18 @@
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 2px;
+    border: 2px;
+    content: 2px;
+    padding: 10px;
+    background-color: red;
+}
+a:link{
+    color:black;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color: yellow;
+}
