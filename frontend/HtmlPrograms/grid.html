@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grid</title>
+        <style>
+            .grid-container{
+                display: grid;
+                background-color: blue;
+                grid-template-rows: repeat(1,200px);
+                grid-template-columns: 100px 100px 100px  50px;
+                grid-gap: 20px;
+                justify-content: end;
+                align-content: center;
+            }
+            .child1{
+                background-color: #fff;
+                border: 2px solid;
+            }
+            .child2{
+                background-color: #fff;
+                border: 2px solid;
+            }
+            .child3{
+                background-color: #fff;
+                border: 2px solid;
+            }
+            .child4{
+                background-color: #fff;
+                border: 2px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="child1">
+                child1
+            </div>
+            <div class="child2">
+                child2
+            </div>
+            <div class="child3">
+                child3
+            </div>
+            <div class="child4">
+                child4
+            </div>
+        </div>
+    </body>
+</html>
