@@ -1,0 +1,82 @@
+/* .box{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 10px solid black;
+    padding: 10px;
+}
+
+.box1{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+.parent{
+    margin: 10px;
+    border: 5px solid black;
+    padding: 10px;
+} */
+
+/* body{
+    width: 500px;
+    height: 500px;
+    background-image: url("shoes.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+} */
+
+.content{
+    width: 500px;
+    height: 50px;
+    background-color: red;
+    font-size: 50px;    
+    font-weight: 600;
+    font-style: italic;
+}
+a{
+    color: green;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color: black;
+}
+.span-content{
+    color: red;
+    display: block;
+}
+
+.main{
+    background-color: red;
+    display: flex;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
+
+.main-div{
+    background-color: cyan;
+    display: inline-flex;
+}
+
+.box{
+    width: 125px;
+    height: 125px;
+    background-color: red;
+}
+
+
