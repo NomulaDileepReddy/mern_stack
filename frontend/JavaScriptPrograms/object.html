@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Objects</title>
+    </head>
+    <body>
+        <script>
+
+            var name="Dileep";
+            var user1={
+                name:"test1",
+                show:function(){
+                    console.log(window===this);
+                    console.log(this);
+                    console.log(window);
+                    console.log(window.name);
+                    console.log(this.name);
+                }
+            }
+            
+            user1.show()
+            console.log(window===this);
+            console.log(this);
+            console.log(window);
+            console.log(window.name);
+            console.log(this.name);
+
+
+
+
+
+
+
+            // function Employee(name,age){
+            //     this.name=name,
+            //     this.age=age
+            //     this.showInfo = function(){
+            //         console.log("indo==",this.name,this.age)
+            //     }
+            // }
+            // let emp1= new Employee('Dileep',27)
+        
+            // let emp2 = new Employee('Reddy',20)
+
+            // emp1.showInfo();
+            // emp2.showOInfo();
+        </script>
+    </body>
+</html>
