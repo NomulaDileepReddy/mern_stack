@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CRUD Operations</title>
+        <style>
+            table,tr,td,th{
+                border: 2px solid red;
+
+            }
+            table{
+                border-collapse: collapse;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Registration From</h1>
+        <form onsubmit="saveData()">
+        <label>First name</label>
+        <input type="text" value="" id="fname"/>
+        <label>Last name</label>
+        <input type="text" value="" id="lname"/>
+        <label>Age</label>
+        <input type="text" value="" id="age"/>
+
+        <input type="submit" value="save"/>
+        </form>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+            <tbody id="mainData">
+
+            </tbody>
+        </table>
+    </body>
+    <script>
+        var isUpdate = false;
+        function saveData(){
+            event.preventDefault();
+            let fname = document.getElementById("fname").value;
+            let lname = document.getElementById("lname").value;
+            let age = document.getElementById("age").value;
+            console.log(fname,lname,age);
+            let tableData = document.getElementById("mainData")
+            tableData.innerHTML = tableData.innerHTML+`
+            <tr>
+                <td>${fname}</td>
+                <td>${lname}</td>
+                <td>${age}</td>
+                <td class="deleteCol"><button onclick="deleteData(this)">Delete</button>
+                    <button onclick="updateData(this)">Update</button></td>
+                </tr>           
+            `
+            reset();
+        }
+
+        function reset(){
+            // isUpdate =false;
+            // self=null;
+            document.getElementById("fname").value="";
+            document.getElementById("lname").value="";
+            document.getElementById("age").value="";
+        }
+
+        function deleteData(self){
+            self.parentElement.parentElement.remove()
+        }
+
+        function updateData(self){
+            isUpdate = true;
+            console.log("here",self);
+            values = self.parentElement.parentElement.textContent.split("\n");
+            document.getElementById("fname").value=values[1].trim()
+            document.getElementById("lname").value=values[2].trim()
+            document.getElementById("age").value=values[3].trim()
+            //updateDataInRow();
+        }
+        // function updateDataInRow(){
+        //     let fname = document.getElementById("fname").value;
+        //     let lname = document.getElementById("lname").value;
+        //     let age = document.getElementById("age").value;
+        //     console.log(fname,lname,age)
+        // }
+    </script>
+</html>

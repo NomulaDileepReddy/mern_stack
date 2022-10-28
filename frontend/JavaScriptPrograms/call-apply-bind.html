@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Call-Apply-Bind</title>
+    </head>
+    <body>
+        <script>
+            var user1={
+                name:"dileep",
+                class:"AI",
+                roll_no:27,
+                show:function(){
+                    console.log(this,this.name);
+                    
+                }
+            }
+
+            var user2={
+                name:"AbDe",
+                class:"Cricket",
+                roll_no:18
+            }
+
+            // user1.show();
+            // user1.show.call(user2);
+
+            // user1.show.apply(user2);
+
+            // let returnFn = user1.show.bind(user2);
+            // console.log(returnFn());
+
+            // constructor  --- object is cretaeed based on the predefied template
+            // new operator --- it is used to create new object
+
+            function Employee(){
+                this.name="emp1",
+                this.age=20
+            }
+
+            let e1 = new Employee();
+            let e2 = new Employee();
+
+            console.log(e1,e2);
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            // function sayHello(){
+            //     console.log("Hello");
+            // }
+            // setTimeout(function(){
+
+            // },300)
+
+            // function greet(msg,fn){
+            //     console.log("Hello",msg)
+            //     fn();
+            // }
+
+            // greet("Good moring",sayHello);
+
+            // ----------------------------
+
+        //     function say(){
+        //         console.log("I am say");
+        //     }
+        //     function said(){
+        //         console.log("I am said");
+        //        // fn();
+        //     }
+        //     // setTimeout(said,30);
+        //     // say();
+        //    // said("good moring",say);
+
+           //--------------------------------------
+
+            // function getUsers(fn){
+            //     console.log("starting of function");
+            //     setTimeout(() =>  {
+            //         console.log("In the function");
+            //         fn({
+            //             name:"dileep",
+            //             age:"20",
+            //             id:"101"
+            //         })
+            //         console.log("Outside the function");
+            //     },300);
+            // }
+
+            // function showUser(user){
+            //     console.log("User info recieved from db",user);
+            // }
+
+            // getUsers(showUser);
+
+            // ---------------------------------------------------
+
+            // ------------Example using callbacks------------------
+
+            // function getAllPost(callback1,callback2,callback3){
+            //     fetch('https://jsonplaceholder.typicode.com/todos/1')
+            //     .then(function(res){
+            //         console.log("I got th data");
+            //         callback1(callback2,callback3);
+            //     })
+            // }
+
+            // function displayPostData(callback2,callback3){
+            //     console.log("I am displaying post data");
+            //     callback2(callback3);
+            // }
+
+            // function commit(callback3){
+            //     console.log("Please call me after display");
+            //     callback3();
+            // }
+
+            // function finalresult(){
+            //     console.log("Execute me once all done");
+            // }
+
+            // getAllPost(displayPostData,commit,finalresult);
+        
+            
+        //  ---------------------------------------------------------------------
+            
+            function getData(callback1,callback2){
+                console.log("I got data");
+                callback1();
+                callback2();
+            }
+
+            function showData()
+            {
+                console.log("I am displaying data")
+            
+            }
+            function commitData()
+            {
+                console.log("Execite only once you finish all code")
+            }
+
+            getData(showData,commitData);
+            
+        //  ----------------------------------------------------------------------
+
+    //   -------------Promise Examples ------------------
+        //     function placeorder(){
+        //         return new Promise(function(resolve,reject){
+        //             setTimeout(function(){
+        //                 console.log("Placing order");
+        //                 resolve({orderid:"123","item":"vivo"})
+        //                 //reject("Ordered not placed network error");
+        //              },2000)
+        //         })
+                
+        //     }
+             
+        //     function pay(){
+        //         console.log("payment done");
+        //     }
+            
+        //     placeorder().then(function(data){
+        //         console.log(data);
+        //         pay();
+        //     }).catch(function(error){
+        //         console.log("Some error while placing Order",error);
+        //     })
+
+
+//   -------------------------------------------------------------------------
+
+            // function getPost(){
+            //     console.log("Calling api to get data");
+            //     fetch('http://jsonplaceholder.typicode.com/todos/1')
+            //     .then(function(res){
+            //         console.log("api called successfully");
+            //         displayData();
+            //     })
+            // }
+            
+            // function displayData(){
+            //     console.log("Displaying data");
+            // }
+            // getPost();
+
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+

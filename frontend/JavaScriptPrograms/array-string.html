@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array demo </title>
+    </head>
+    <body>
+        <script>
+             let a1 = [1,2,3,4,5]
+             console.log(a1);
+             let a2 = new Array(1,2,3,4,5);
+             console.log(a2);
+             console.log(Array.isArray(a2));
+
+             for(let i=0;i<a1.length;i++)
+             {
+                console.log(a1[i]);
+             }
+
+             let arr = [10,20,30]
+             arr.push("dileep");
+             console.log(arr);
+             arr.push("reddy");
+             console.log(arr)
+             arr.pop("reddy");
+             console.log(arr);
+             arr.shift();
+             console.log(arr);
+             arr.unshift("hello");
+             console.log(arr);
+             let index = arr.indexOf(20)
+             console.log(index)
+            
+             let arr1 = [10,20,30]
+             console.log(arr1.indexOf(30));
+             console.log(arr1.indexOf(40));
+             let index1 = arr1.indexOf(30)
+             console.log(arr1.splice(index1))
+             console.log(arr1)
+
+             //  Strings 
+              
+             let str = "hello i am here am";
+             console.log(str.length)
+             console.log(str.indexOf("am"));
+             console.log(str.lastIndexOf("am"));
+             
+
+             let st1 = "hello";
+             let st2 = "world";
+             console.log(st1+st2);
+
+             console.log(str.slice(1,5));  // Method to extract a part or substring
+
+             console.log(str.replace("am","love"));
+             console.log(str.charAt(3));
+             
+        </script>
+    </body>
+</html>
