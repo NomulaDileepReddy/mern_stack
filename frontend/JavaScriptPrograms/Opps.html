@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OOPS Demo</title>
+    </head>
+    <body>
+        <script>
+            class Person{
+                constructor(name,age){
+                    this.name=name,
+                    this.age=age;
+                }
+                show(){
+                    console.log(this.name,this.age)
+                }
+                displayCaps(){
+                    this.name = this.name.toUpperCase();
+                }
+                sayHello(){
+                    console.log("Hello from parent");
+                }
+            }
+            // let p1 = new Person("dileep",20);
+            // p1.show();
+            // p1.displayCaps()
+            // p1.show()
+
+
+            class Employee extends Person{
+                constructor(name,age,companyName,salary){
+                    super(name,age)
+                    this.companyName=companyName,
+                    this.salary=salary;
+                }
+
+                showEmpInfo(){
+                    console.log(this.companyName,this.salary);
+                }
+                
+                sayHello(){
+                    super.sayHello();
+                    console.log("Hello from child")
+                }
+            }
+
+            let emp1 = new Employee("dileep",20,"careerx",3000)
+            let emp2 = new Employee("Tehith",20,"careerx",22)
+            emp1.show();
+            emp1.showEmpInfo();
+            emp2.showEmpInfo();
+            emp2.show();
+            emp1.sayHello();
+
+            let emp3 = new Person()
+            emp3.sayHello();
+
+        </script>
+    </body>
+</html>

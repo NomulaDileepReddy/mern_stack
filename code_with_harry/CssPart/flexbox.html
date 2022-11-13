@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CSS GRIDS </title>
+        <style>
+            .container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                /* flex-direction contains row , column ,row-reverse , column-reverse */
+                justify-content: center;    /*justifycontent moves the element horizontally */
+                background-color: green;
+                height: 50vh;
+                align-items: center;       /* align-items moves the element vertically */
+                /* align-content: center; */
+            }
+            .box1{
+                height: 234px;
+                width : 345px;
+                background-color: blue;
+                align-self: flex-start;   /* align-self applies to individual element and overrides default alignment from top to bottom */
+                flex-grow: 1;             /* defines the ability for a flex item to grow */
+                /* flex-shrink: 10; */
+            }
+            .box2{
+                height: 234px;
+                width : 345px;
+                background-color: red;
+                border: 5px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box1">box1</div>
+            <div class="box2">box2</div>
+            <div class="box2">box3</div>
+            <div class="box2">box4</div>
+        </div>
+    </body>
+</html>

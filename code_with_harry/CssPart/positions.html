@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positons</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 74px;
+        }
+
+        p {
+            text-align: center;
+            border: 2px solid red;
+        }
+
+        .container {
+            background-color: cyan;
+            height: 300vh;
+            width: 50vw;
+            margin: auto;
+            padding: 0 30px;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            /* by2222222222 defalult position is static . if position is static top/bottom/left/right has no effect */
+            /* position: relative; */
+            /* top: 10px;
+            left: 10px; */
+
+        }
+
+        .box2 {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: sticky;
+            top: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas atque, dolore itaque minus architecto,
+            voluptatibus consequatur natus culpa cumque nihil sit delectus esse, eos velit mollitia praesentium
+            doloribus! Beatae, earum.</p>
+        <div class="box">
+            I am a box
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum doloribus eveniet ipsam maxime, eum
+            repellendus accusamus ad blanditiis. Reiciendis saepe itaque laborum, quibusdam aspernatur sunt sed vero,
+            praesentium, suscipit rem corrupti ipsum repellendus.
+        </div>
+        <div class="box3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, adipisci.
+        </div>
+    </div>
+</body>
+
+</html>

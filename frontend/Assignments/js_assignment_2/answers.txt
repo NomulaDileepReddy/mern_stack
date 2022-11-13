@@ -1,0 +1,116 @@
+1. The ” var” and “function” are known as _____________.
+
+ans : Declaration statements
+
+Explanation : Because var and function always write before any Declaration
+
+
+2. Which of these is a correct output for the JavaScript code given below?
+
+string X= “Hey”;
+
+string Y=”There”;
+
+ans : undefined
+
+Explanation : There is no string named datatype
+
+3. Which of these is known as the Equality operator used for checking whether both the values are equal?
+
+ans : ==
+
+Explanation : " == " uses to comapare the values whether they are equal or not
+
+
+4. function sayHi() {
+  console.log(name);
+  console.log(age);
+  var name = 'Lydia';
+  let age = 21;
+}
+
+sayHi();
+
+ans : undefined and referenceError
+
+Explanation : This method of printing variable before declaring is called as
+              Hoisting .. By default var name = undefined in the first line . 
+              And let is not possible with Hoisting .
+
+6.function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const lydia = new Person('Lydia', 'Hallie');
+const sarah = Person('Sarah', 'Smith');
+
+console.log(lydia);
+console.log(sarah);
+
+ans : Person {firstName: "Lydia", lastName: "Hallie"} and undefined
+
+Explanation : In lydia we used new keyword and not used in sarah .
+              so lydia will work but sarah not and it gives undefined .
+
+
+7.function sum(a, b) {
+    return a + b;
+  }
+  
+  sum(1, '2');
+
+ans : Nan
+
+Explanation : we didn't have any print statements to print it was just returning . it return "12"
+
+8. let number = 0;
+console.log(number++);
+console.log(++number);
+console.log(number);
+
+ans : 0 2 2
+
+Explanation - first it prints the number and after it has a post increment and the value 
+              got updated to 1 and in second line it has preincrement again it updated to 2 and print 2 
+              and third line prints the number which is updated to 2
+
+
+9. var num = 8;
+var num = 10;
+
+console.log(num);
+
+ans : 10
+
+Explanation : It will take the updated previous declared value so it prints 10
+
+10. const obj = { a: 'one', b: 'two', a: 'three' };
+console.log(obj);
+
+ans : { a: "three", b: "two" }
+
+Explanation : first we have a as one and after we declared as three so it takes three as value
+              and it print a : three and b : two
+
+11. Output of code 
+var text = 'outside';
+function logIt(){
+    console.log(text);
+    var text = 'inside';
+};
+logIt();
+
+ans : undefined
+
+Explanation : By default js will do all Declaratice statements in the first line.
+
+
+16. what would following code return 
+
+console.log(typeof typeof 1);
+
+ans : string
+
+Explanation : typeof(1) is number
+              typeof(number) is string

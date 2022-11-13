@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Properties</title>
+        <!-- display: inline property cannot make changes like changing width height and takes only content space -->
+        <!-- display: block property can make changes and takes whole line space-->
+        <!-- display: inline-block behaves as inline but can make changes -->
+        <!-- display: flex beaves like flexible , it adjust the elements based on the screeen size -->
+        <!-- display: inline-flex behaves like inline but also have flex properties -->
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+            }
+            .box-span{
+                background-color: cyan;
+                display: inline-block;
+            }
+
+            .parent{
+                height: 400px;
+                background-color: red;
+                display: inline-flex;
+            }
+            .child1{
+                width: 200px;
+                height: 300px;
+                background-color: blue;
+            }.child2{
+                width: 200px;
+                height: 300px;
+                background-color: cyan;
+            }
+            .child3{
+                width: 200px;
+                height: 300px;
+                background-color: pink;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- <div class="box">
+            Hello in div
+        </div>
+        <span class="box-span">Hello i am span</span>
+        <span class="box-span">Hello i am span</span> -->
+        <p>Hello in full stack development <span>Welcome to full stack</span></p>
+        <div class="parent">
+            <div class="child1">Child 1</div>
+            <div class="child2">Child 2</div>
+            <div class="child3">Child 3</div>
+        </div>
+    </body>
+</html>
