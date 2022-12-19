@@ -1,0 +1,5 @@
+mkdir backend-api
+cd backend-api
+npm init
+npm install express 
+

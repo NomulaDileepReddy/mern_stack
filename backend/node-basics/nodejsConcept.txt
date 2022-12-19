@@ -1,0 +1,38 @@
+Node --- Run time environment for javaScript code
+
+chrome V8 version defination is fully written  in c++ language
+
+NodeJSTeam --  placed chrome v8 engine on the Node application
+
+If you are installing node software in your machine then you are installing v8 engine application
+
+For installation of node in your machine use command :
+
+https://nodejs.org in chrome and download the node then check whether node is successfully installed in your maachine by using the command ( node --version ) on the terminal
+
+NodeJS provides event driven ---- whenever you generates or emmit an event there is a receiver of that event based on that event the API will works 
+
+
+Node JS is non-blocking ----- Next code will not wait to complete the previous code , api are written in non-blocking
+
+Node JS is asynchronous 
+
+Using nodejs we can create rest api (backend api) ,network applications (two systems communticate with each other), dataIntensive applications , real time chat application (data frequently changing and we will get output within seconds)
+
+To open node console in terminal  :  node
+
+------------------   Topics   ----------------------
+
+ REPL    :  (Read Evaluation Print Loop)
+
+ Module  :  Single or multiple javaScript files which can be reused throughtout the nodejs application
+
+            Core Module   : the Modules given by node software itself like fs module ,http module, url module .These modules are not to be installed
+            Local Module  : the Modules which are created by developers or programmer for their use 
+            thridParty Module   :  installing from npm . example : npm install mongoose, 
+
+
+nodejs  --- exports/require
+es6 module ---export/import
+
+npm job is to install and uninstall packages
